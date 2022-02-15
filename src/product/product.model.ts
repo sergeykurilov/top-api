@@ -12,8 +12,6 @@ class ProductCharacteristics {
 
 export class ProductModel extends TimeStamps {
   @prop()
-  _id: number;
-  @prop()
   image: string;
   @prop()
   title: string;
@@ -24,8 +22,6 @@ export class ProductModel extends TimeStamps {
   @prop()
   credit: number;
   @prop()
-  calculatedRating: number;
-  @prop()
   description: string;
   @prop()
   advantages: string;
@@ -34,7 +30,7 @@ export class ProductModel extends TimeStamps {
   @prop({ type: () => [String] })
   categories: string[];
   @prop({ type: () => [String] })
-  tags: string;
+  tags: string[];
   @prop({ type: () => [ProductCharacteristics], _id: true })
   characteristics: ProductCharacteristics[];
 }
