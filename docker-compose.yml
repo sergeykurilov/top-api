@@ -5,6 +5,6 @@ services:
     container_name: top-api
     restart: always
     ports:
-      - 3000:3000
+      - 8000:8000
     volumes:
       - ./.env:/opt/app/.env
